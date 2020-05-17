@@ -1,0 +1,15 @@
+{
+  "name": "mybio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "myBio": "node-sass css/myBio.scss css/myBio.css -w"
+  },
+  "author": "Panagiotis Stav",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.5"
+  },
+  "description": "my resume page"
+}
