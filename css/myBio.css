@@ -1,0 +1,714 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  margin: 2.5rem;
+  color: #777777;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.margin-bottom-big {
+  margin-bottom: 9rem !important; }
+
+.margin-bottom-medium {
+  margin-bottom: 5rem !important; }
+
+.center-text {
+  text-align: center !important; }
+
+.margin-bottom-small {
+  margin-bottom: 2.5rem !important; }
+
+.margin-bottom-tiny {
+  margin-bottom: 1.5rem !important; }
+
+.margin-top-big {
+  margin-top: 9rem !important; }
+
+.margin-top-small {
+  margin-top: 2rem !important; }
+
+.row {
+  margin: 0 8%; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.col-1-of-2 {
+  width: calc((100% - 15rem) / 2);
+  display: inline-block;
+  float: left; }
+  .col-1-of-2:not(:last-child) {
+    margin-right: 15rem; }
+  .col-1-of-2.summary__contact {
+    width: calc((100% - 10rem) / 2 - 9%);
+    margin-left: -5%; }
+  .col-1-of-2.summary__details {
+    width: calc((100% - 15rem) / 2 + 11%); }
+
+.summary {
+  padding: 2rem;
+  padding-bottom: 65rem;
+  background-color: #ecf0f1;
+  border-radius: 3px;
+  margin-bottom: -20rem; }
+  .summary__details-header {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform .2s; }
+    .summary__details-header:hover {
+      transform: scale(1.15) skewX(-14deg) skewY(1deg); }
+  .summary__details-text {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center; }
+  .summary__contact-info {
+    font-size: 2rem;
+    height: 13rem; }
+
+.photoDiv {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%; }
+
+.myPhoto {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  border-radius: inherit;
+  background-size: cover;
+  border: 1.3rem solid transparent;
+  padding: 1.3rem;
+  transition: transform .25s; }
+  .myPhoto:hover {
+    transform: scale(1.1);
+    box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 0.1);
+    border: 1.3rem solid #2c3e50;
+    padding: 1.3rem; }
+
+.contactList {
+  list-style: none; }
+  .contactList a {
+    text-decoration: none;
+    color: #2196F3;
+    display: inline-block;
+    transition: transform .2s; }
+    .contactList a:hover {
+      color: #03A9F4;
+      transform: scale(1.1) skewX(-10deg); }
+
+.listHead {
+  color: #455A64;
+  padding-right: 1.3rem; }
+
+.projects {
+  background-color: #ecf0f1;
+  padding-bottom: 20rem;
+  padding-top: 5rem;
+  padding-top: 20rem;
+  background-image: url(../pictures/ocean.jpg);
+  background-size: cover;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  margin-top: -65rem; }
+
+.header-main {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: transform .2s;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%); }
+  .header-main:hover {
+    transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+
+.col-1-of-4 {
+  width: calc((100% - 3* 5rem) / 4);
+  display: inline-block;
+  float: left;
+  text-align: center; }
+  .col-1-of-4:not(:last-child) {
+    margin-right: 5rem; }
+  .col-1-of-4:not(:last-child) {
+    margin-bottom: 5rem; }
+
+.card {
+  height: 42rem;
+  background-color: white;
+  box-shadow: 2rem 2.5rem 4rem rgab(black, 0.3);
+  border-radius: .4rem;
+  transition: transform .3s;
+  overflow: hidden;
+  position: relative; }
+  .card__header {
+    padding-top: 2rem;
+    font-size: 3rem; }
+  .card__technologies {
+    font-size: 3rem; }
+    .card__technologies-header {
+      font-size: 1.6rem;
+      font-weight: 600; }
+  .card:hover {
+    transform: scale(1.05) translateY(-1.2rem); }
+
+.technologiesList {
+  list-style: none; }
+  .technologiesList li {
+    font-size: 1.4rem;
+    width: 50%;
+    padding: 1.3rem 0;
+    display: inline-block; }
+    .technologiesList li:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.13); }
+
+.btn {
+  background-color: #607D8B;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: .5px;
+  transition: all .2s ease-out; }
+  .btn:hover {
+    background-color: #CFD8DC;
+    color: #607D8B !important;
+    transform: translate(-50%, -55%); }
+  .btn:active {
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%); }
+
+.btnLink {
+  text-decoration: none;
+  color: white; }
+
+#popupTED {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupTED .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupTED .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupTED .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupTED .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupTED .popup__content-github {
+      font-size: 1.9rem; }
+      #popupTED .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupTED .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupTED:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupTED__close {
+    position: relative; }
+    #popupTED__close:link, #popupTED__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupQuizWorld {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupQuizWorld .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupQuizWorld .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupQuizWorld .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupQuizWorld .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupQuizWorld .popup__content-github {
+      font-size: 1.9rem; }
+      #popupQuizWorld .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupQuizWorld .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupQuizWorld:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupQuizWorld__close {
+    position: relative; }
+    #popupQuizWorld__close:link, #popupQuizWorld__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupToDoOrNotToDo {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupToDoOrNotToDo .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupToDoOrNotToDo .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupToDoOrNotToDo .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupToDoOrNotToDo .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupToDoOrNotToDo .popup__content-github {
+      font-size: 1.9rem; }
+      #popupToDoOrNotToDo .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupToDoOrNotToDo .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupToDoOrNotToDo:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupToDoOrNotToDo__close {
+    position: relative; }
+    #popupToDoOrNotToDo__close:link, #popupToDoOrNotToDo__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupServer {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupServer .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupServer .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupServer .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupServer .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupServer .popup__content-github {
+      font-size: 1.9rem; }
+      #popupServer .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupServer .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupServer:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupServer__close {
+    position: relative; }
+    #popupServer__close:link, #popupServer__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupInfo1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupInfo1 .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupInfo1 .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupInfo1 .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupInfo1 .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupInfo1 .popup__content-github {
+      font-size: 1.9rem; }
+      #popupInfo1 .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupInfo1 .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupInfo1:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupInfo1__close {
+    position: relative; }
+    #popupInfo1__close:link, #popupInfo1__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupInfo2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupInfo2 .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupInfo2 .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupInfo2 .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupInfo2 .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupInfo2 .popup__content-github {
+      font-size: 1.9rem; }
+      #popupInfo2 .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupInfo2 .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupInfo2:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupInfo2__close {
+    position: relative; }
+    #popupInfo2__close:link, #popupInfo2__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupInfo3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupInfo3 .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupInfo3 .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupInfo3 .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupInfo3 .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupInfo3 .popup__content-github {
+      font-size: 1.9rem; }
+      #popupInfo3 .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupInfo3 .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupInfo3:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupInfo3__close {
+    position: relative; }
+    #popupInfo3__close:link, #popupInfo3__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+#popupContacts {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden; }
+  #popupContacts .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../pictures/palmTrees.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    background-position: center; }
+    #popupContacts .popup__content-header {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      width: 100%;
+      display: inline-block;
+      margin-left: 50%;
+      transform: translateX(-50%); }
+      #popupContacts .popup__content-header:hover {
+        transition: transform .2s;
+        transform: translateX(-50%) scale(1.15) skewX(-14deg) skewY(1deg); }
+    #popupContacts .popup__content-description {
+      width: 100%;
+      font-size: 2rem;
+      line-height: 3rem; }
+    #popupContacts .popup__content-github {
+      font-size: 1.9rem; }
+      #popupContacts .popup__content-github a {
+        text-decoration: none;
+        color: #2196F3;
+        display: inline-block;
+        transition: transform .2s; }
+        #popupContacts .popup__content-github a:hover {
+          color: #03A9F4;
+          transform: scale(1.1) skewX(-10deg); }
+  #popupContacts:target {
+    opacity: 1;
+    visibility: visible; }
+  #popupContacts__close {
+    position: relative; }
+    #popupContacts__close:link, #popupContacts__close:visited {
+      color: black;
+      text-decoration: none;
+      font-size: 3rem;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+
+.workAndTutorials {
+  padding-top: 25rem;
+  margin-top: -18rem;
+  padding-bottom: 8rem; }
+
+.onlineTutorials__list {
+  list-style: none; }
+  .onlineTutorials__list li {
+    padding: 2.5rem; }
+    .onlineTutorials__list li a {
+      text-decoration: none;
+      color: #2196F3;
+      display: inline-block;
+      transition: transform .2s; }
+      .onlineTutorials__list li a:hover {
+        color: #03A9F4;
+        transform: scale(1.1) skewX(-10deg); }
+
+.position__nokia-header {
+  font-size: 2.5rem;
+  font-weight: 500; }
+  .position__nokia-header-date {
+    font-size: 1.6rem;
+    font-weight: 300; }
+
+.workExperience {
+  padding-left: 10rem;
+  border-left: 0.5px solid rgba(0, 0, 0, 0.2); }
